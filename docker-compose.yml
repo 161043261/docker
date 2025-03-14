@@ -53,14 +53,14 @@ services:
   # docker-compose down mongo-express_service -v
 
   # docker-compose up -d nginx_service
-  # nginx_service:
-  #   image: nginx
-  #   container_name: nginx_container
-  #   hostname: nginx_host
-  #   restart: always
-  #   ports:
-  #     - "80:80"
-  #   environment:
-  #     - NGINX_PORT=80
+  nginx_service:
+    image: nginx
+    container_name: nginx_container
+    hostname: nginx_host
+    restart: always
+    ports:
+      - "80:80"
+    environment:
+      - NGINX_PORT=80
   # docker-compose down nginx_service -v
 # docker-compose down -v # volume
